@@ -9,12 +9,13 @@ import {
 //https://github.com/suthon-coe/pages
 
 const students = [
-  {id: '12', name: 'John Doe', score: 23},
-  {id: '18', name: 'Jenny Jason', score: 27},
-  {id: '20', name: 'Tim Brown', score: 22}
+  {id: '12', name: 'New', score: 23},
+  {id: '18', name: 'Bob', score: 27},
+  {id: '20', name: 'bank', score: 22}
 ]
 
 const Home = () => (<div>Home</div>)
+<li><Link to="/netflix">Netflix</Link></li>
 const Students = () => (
   <div>
     {
