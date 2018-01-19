@@ -14,14 +14,17 @@ const students = [
   {id: '20', name: 'bank', score: 22}
 ]
 
-const Home = () => (<div>Home</div>)
-<li><Link to="/netflix">Netflix</Link></li>
+const Home = () => (<div>Home
+  <li><Link to="/students">list of students</Link></li>
+</div>)
+
 const Students = () => (
   <div>
     {
       _.map(students, s => <StudentLink {...s} key={s.id}/>)
     }
     <Route path="/students/:id" component={StudentContainer}/>
+    
   </div>
 )
 const StudentContainer = ({match}) => {
